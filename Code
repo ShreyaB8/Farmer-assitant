@@ -1,1 +1,56 @@
-//Farmer's assitant 
+//Farmer's assitant is an -explain-
+//We are taking rice as an example for our bot it is one of the most cruicial and popularly grown crop across our country
+/*The future plans with farmer's assistant are to include all the major and minor crops which can be grown on Indian soil so as to help the
+farmers be prepared for any circumstances and maximize there production leading to the development of our country*/
+//We are providing the basic structure of our code and bot's final look produced using 'Dialogflow' as of now as the frameworks required to make what we have envisioned requires us to hire a server
+//We will be using c++ for the bot and OOPs concept is implementable, we shall we encorporating that.
+
+#include<iostream>
+using namespace std;
+class alluvial
+{
+
+} rice;
+class red_soil
+{
+
+} rice;
+class laterite
+{
+
+} rice;
+class black_soil
+{
+
+} rice;
+class sodic_soil
+{
+
+} rice;
+class saline_soil
+{
+
+} rice;
+class saline_sodic_soil
+{
+
+} rice;
+class acid_red_lateritic_soil
+{
+
+} rice;
+class acid_sulphate_soil
+{
+
+} rice;
+class peat
+{
+
+} rice;
+
+
+void main()
+{
+
+}
+
