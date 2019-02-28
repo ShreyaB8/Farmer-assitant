@@ -4,16 +4,18 @@
 farmers be prepared for any circumstances and maximize there production leading to the development of our country*/
 //We are providing the basic structure of our code and bot's final look produced using 'Dialogflow' as of now as the frameworks required to make what we have envisioned requires us to hire a server
 //We will be using c++ for the bot and OOPs concept is implementable, we shall we encorporating that.
-//phase 1, phase 2, phase 3
+//This is Phase 1. 
 //make probablity data sheet
-//Data we are getting from the sensors-> pH, temperature, soil humidity, weather
-//Data we are getting from the database based on the info given by the user-> possible pest on the crop in the area mentioned
-//let the data base be-> Pestpossiblity
+//Data we are getting from the sensors-> pH, temperature, soil humidity, weather,gps, soil type
+//Sensor's used are pH meter, soil humidity sensor, gps - we will find the soil type and temperature from gps
+//Data we are getting from the database based on the info given by the user-> possible pest on the crop in the area mentione
 
 #include<fstream>
+#include<iostream.h>
+#include<string.h>
 using namespace std;
 string name;
-int soil, crop, area;
+int soil, crop;
 void welcome_menu()
 {
  cout<<"\tWELCOME\n\tI am the Farmer's Assitant\n";
@@ -23,7 +25,7 @@ void welcome_menu()
 }
 void soil_menu()
 {
- cout<<"FA--->lease select the soil type from the menu below\n1.ALLUVIAL SOIL\n2.BLACK SOIL\n3.RED SOIL\n4.LATERITE SOIL\n5.I DON"T KNOW";
+ cout<<"FA--->lease select the soil type from the menu below\n1.ALLUVIAL SOIL\n2.BLACK SOIL\n3.RED SOIL\n4.LATERITE SOIL";
  cin>>crop;
  clrscr();
 }
@@ -35,24 +37,212 @@ void crop_menu()
 }
 void crop_area()
 {
- cout<<"FA--->Please select the area your farm is in"
- gets(area);
- clrscr();
-}
+ //by using gps we find out the area and from our database we find out the soil type
+ //gps is variable name with the data from the gpd location sensor present on site
+ cout<<"Displaying the location coordinates"<<gps;
+ //using 'openstreetmap' we find out the location, soil type and temperature of the farm 
 void farm_status()
 {
   cout<<"FA---> These are the vitals of your FARM";
-   //display data from the sensors
+   //display data from the senor
 }
-void asses_data()
+void asess_data()
 {
   //data base file handling will be done here.
   //asses the data from the sensor and data base to come up with possible pests and problems
   //example- ph of rice is supposed to between 5-8
+  //our variables used are t=temperature, m=moisture level in soil, s=soil type
+  temperature_pest() 
+}
+
+int temperature()
+{
+  int tmp, t[50],temp=0;
+  fstream st; // Creating object of fstream class
+    st.open("D:\database.csv",ios::app,ios::beg);   // Opening file in read mode
+    
+    //first we will classify the pest regarding Temperature, then we will narrow the data down using moisture as an parameter and then soil 
+    //as our last parameter
+   
+    if(!st) //Checking whether file exist
+    {
+        cout<<"No such file";
+    }
+    else
+    {
+      while (st>>tmp) //reading the data from the file
+    {
+			   for(int i=0;;i++) 
+      {
+        if(i==0)
+        {
+         t[i]=tmp-t;
+         temp=t[i];
+        }
+        else
+        {
+          t[i]=tmp-t;
+           if(temp=-t[i])
+            {
+              t[i]=-temp; //to avoid negetive difference error
+            }
+         }
+       }
+     }
+    
+      int n;
+      i=n;
+      for (i = 0; i < n-1; i++)     //to find the temperature with the minimum deviation by sorting the 
+        for (j = 0; j < n-i-1; j++)  
+           if (t[j]>t[j+1]) 
+              swap(&t[j], &t[j+1]); 
+     int minimum_t;
+        minimum_t=a[0];
+     st.close();
+     return(minimum_t)
+}
+void temperature_pest() //finding the pest using the temperature function from the database
+{
+    int tp;
+    string pest;
+    tp=temperature();
+    fstream st; // Creating object of fstream class
+    st.open("D:\database.csv",ios::app,ios::beg);   // Opening file in read mode
+    if(!st) //Checking whether file exist
+    {
+        cout<<"No such file";
+    }
+    else
+    {
+      while (st>>tmp) //reading the data from the file
+    {
+        if(st==tp)
+        {
+          strcpy(pest,p); //P is the pest matching from the database with the temperature
+        }
+    }
+
+}
+int moisture()
+{
+    int tmp, t[50],temp=0;
+  fstream st; // Creating object of fstream class
+    st.open("D:\database.csv",ios::app,ios::beg);   // Opening file in read mode
+    
+     //Here we are classifying the pests using moisture of the soil as a parameter
+    
+    if(!st) //Checking whether file exist
+    {
+        cout<<"No such file";
+    }
+    else
+    {
+      while (st>>tmp) 
+    {
+			   for(int i=0;;i++) //to avoid negetive difference error
+      {
+        if(i==0)
+        {
+         t[i]=tmp-t;
+         temp=t[i];
+        }
+        else
+        {
+          t[i]=tmp-t;
+           if(temp=-t[i])
+            {
+              t[i]=-temp;
+            }
+         }
+       }
+     }
+    
+      int n;
+      i=n;
+      for (i = 0; i < n-1; i++)     //to find the temperature with the minimum deviation
+        for (j = 0; j < n-i-1; j++)  
+           if (t[j]>t[j+1]) 
+              swap(&t[j], &t[j+1]); 
+     int minimum_m;
+        minimum_m=a[0];
+     st.close();
+return(minimum_m);
+}
+void moisture_pest() // finding the pest using the moisture function from the database
+{
+  int tp;
+    string pest;
+    tp=mosture();
+    fstream st; // Creating object of fstream class
+    st.open("D:\database.csv",ios::app,ios::beg);   // Opening file in read mode
+    if(!st) //Checking whether file exist
+    {
+        cout<<"No such file";
+    }
+    else
+    {
+      while (st>>tmp) //reading the data from the file
+    {
+        if(st==tp)
+        {
+          strcpy(p,pest); //P is the pest matching from the database with the temperature
+        }
+    }
+}
+void soil()
+{
+ 
+    int tmp, t[50],temp=0;
+  fstream st; // Creating object of fstream class
+    st.open("D:\database.csv",ios::app);   // Opening file in read mode
+    
+    //first we will classify the pest regarding Temperature, then we will narrow the data down using moisture as an parameter and then soil 
+    //as our last parameter
+    
+    if(!st) //Checking whether file exist
+    {
+        cout<<"No such file";
+    }
+    else
+    {
+      while (st>>tmp) 
+    {
+			   for(int i=0;;i++) 
+      {
+        if(i==0)
+        {
+         t[i]=tmp-t;
+         temp=t[i];
+        }
+        else
+        {
+          t[i]=tmp-t;
+           if(temp=-t[i])
+            {
+              t[i]=-temp;
+            }
+         }
+       }
+     }
+    
+      int n;
+      i=n;
+      for (i = 0; i < n-1; i++)     //to find the temperature with the minimum deviation
+        for (j = 0; j < n-i-1; j++)  
+           if (t[j]>t[j+1]) 
+              swap(&t[j], &t[j+1]); 
+     int minimum_s;
+        minimum_m=a[0];
+     st.close();
+return(minimum_s);
+}
+void soil_pest()
+{
+
 }
 void solution()
 {
-  //based on the asses_data() we will give the solution
+  //based on the asses_data() we will give the solution..........temp,p(temp),moisture, probability(moisture),soil type, p(soil type)
 }
 void main()
 {
