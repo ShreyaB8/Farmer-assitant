@@ -189,57 +189,8 @@ void moisture_pest() // finding the pest using the moisture function from the da
         }
     }
 }
-void soil()
-{
- 
-    int tmp, t[50],temp=0;
-  fstream st; // Creating object of fstream class
-    st.open("D:\database.csv",ios::app);   // Opening file in read mode
-    
-    //first we will classify the pest regarding Temperature, then we will narrow the data down using moisture as an parameter and then soil 
-    //as our last parameter
-    
-    if(!st) //Checking whether file exist
-    {
-        cout<<"No such file";
-    }
-    else
-    {
-      while (st>>tmp) 
-    {
-			   for(int i=0;;i++) 
-      {
-        if(i==0)
-        {
-         t[i]=tmp-t;
-         temp=t[i];
-        }
-        else
-        {
-          t[i]=tmp-t;
-           if(temp=-t[i])
-            {
-              t[i]=-temp;
-            }
-         }
-       }
-     }
-    
-      int n;
-      i=n;
-      for (i = 0; i < n-1; i++)     //to find the temperature with the minimum deviation
-        for (j = 0; j < n-i-1; j++)  
-           if (t[j]>t[j+1]) 
-              swap(&t[j], &t[j+1]); 
-     int minimum_s;
-        minimum_m=a[0];
-     st.close();
-return(minimum_s);
-}
-void soil_pest()
-{
 
-}
+
 void solution()
 {
   //based on the asses_data() we will give the solution..........temp,p(temp),moisture, probability(moisture),soil type, p(soil type)
