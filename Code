@@ -4,53 +4,79 @@
 farmers be prepared for any circumstances and maximize there production leading to the development of our country*/
 //We are providing the basic structure of our code and bot's final look produced using 'Dialogflow' as of now as the frameworks required to make what we have envisioned requires us to hire a server
 //We will be using c++ for the bot and OOPs concept is implementable, we shall we encorporating that.
+//phase 1, phase 2, phase 3
+//make probablity data sheet
+//Data we are getting from the sensors-> pH, temperature, soil humidity, weather
+//Data we are getting from the database based on the info given by the user-> possible pest on the crop in the area mentioned
+//let the data base be-> Pestpossiblity
 
-#include<iostream>
+#include<fstream>
 using namespace std;
-class alluvial
+string name;
+int soil, crop, area;
+void welcome_menu()
 {
-
-} rice;
-class red_soil
+ cout<<"\tWELCOME\n\tI am the Farmer's Assitant\n";
+ cout<<"please enter your name";
+ gets(name);
+ clrscr();
+}
+void soil_menu()
 {
-
-} rice;
-class laterite
+ cout<<"FA--->lease select the soil type from the menu below\n1.ALLUVIAL SOIL\n2.BLACK SOIL\n3.RED SOIL\n4.LATERITE SOIL\n5.I DON"T KNOW";
+ cin>>crop;
+ clrscr();
+}
+void crop_menu()
 {
-
-} rice;
-class black_soil
+ cout<<"FA--->Please select the crop you are growing from the menu below\n1.RICE";
+ cin>>soil;
+ clrscr();
+}
+void crop_area()
 {
-
-} rice;
-class sodic_soil
+ cout<<"FA--->Please select the area your farm is in"
+ gets(area);
+ clrscr();
+}
+void farm_status()
 {
-
-} rice;
-class saline_soil
+  cout<<"FA---> These are the vitals of your FARM";
+   //display data from the sensors
+}
+void asses_data()
 {
-
-} rice;
-class saline_sodic_soil
+  //data base file handling will be done here.
+  //asses the data from the sensor and data base to come up with possible pests and problems
+  //example- ph of rice is supposed to between 5-8
+}
+void solution()
 {
-
-} rice;
-class acid_red_lateritic_soil
-{
-
-} rice;
-class acid_sulphate_soil
-{
-
-} rice;
-class peat
-{
-
-} rice;
-
-
+  //based on the asses_data() we will give the solution
+}
 void main()
 {
-
+  string yn;
+  welcome_menu();
+  crop_menu();
+  menu:
+  cout<<"FA---> Do you know your soil type? TYPE YES OR NO";
+  gets(yn);
+  if(!strcmp(yn,yes)||!strcmp(yn,YES)||!strcmp(yn,Yes))
+  {
+     soil_menu();
+  }
+  else if(!strcmp(yn,no)||!strcmp(yn,NO)||!strcmp(yn,No))
+  {
+     crop_area();
+  }
+  else
+  {
+    cout<<"Wrong input.Please type yes or no";
+    GOTO menu;
+  }
+  clrscr();
+  asses_data();
+  solution();
 }
 
