@@ -50,8 +50,9 @@ void asess_data()
   //data base file handling will be done here.
   //asses the data from the sensor and data base to come up with possible pests and problems
   //example- ph of rice is supposed to between 5-8
-  //our variables used are t=temperature, m=moisture level in soil, s=soil type
-  temperature_pest() 
+  //our variables used are t=temperature, m=moisture level in soil
+  temperature_pest();
+  moisture_pest();
 }
 
 int temperature()
