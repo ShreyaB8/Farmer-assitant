@@ -1,0 +1,127 @@
+file title  : Webb et al Soil Particle Size Properties Zobler Soil Types
+columns     : 360
+rows        : 180
+ref. system : lat/long
+ref. units  : deg
+unit dist.  : 1.0000000
+min. X      : -180.0000000
+max. X      : 180.0000000
+min. Y      : -90.0000000
+max. Y      : 90.0000000
+pos'n error : unknown
+resolution  : 1.0000000
+min. value  : 0
+max. value  : 107
+value units : classes
+value error : unknown
+flag value  : none
+flag def'n  : none
+legend cats : 108
+category  0 :   0 WATER   WATER/OCEAN/LAKE    
+category  1 :   1 AF      FERRIC ACRISOL      
+category  2 :   2 AG      GLEYIC ACRISOL      
+category  3 :   3 AH      HUMIC ACRISOL       
+category  4 :   4 AO      ORTHIC ACRISOL      
+category  5 :   5 AP      PLINTHIC ACRISOL    
+category  6 :   6 BC      CHROMIC CAMBISOL    
+category  7 :   7 BD      DYSTRIC CAMBISOL    
+category  8 :   8 BE      EUTRIC CAMBISOL     
+category  9 :   9 BF      FERRALIC CAMBISOL   
+category 10 :  10 BG      GLEYIC CAMBISOL     
+category 11 :  11 BH      HUMIC CAMBISOL      
+category 12 :  12 BK      CALCIC CAMBISOL     
+category 13 :  13 BV      VERTIC CAMBISOL     
+category 14 :  14 BX      GELIC CAMBISOL      
+category 15 :  15 CG      GLOSSIC CHERNOZEM   
+category 16 :  16 CH      HAPLIC CHERNOZEM    
+category 17 :  17 CK      CALCIC CHERNOZEM    
+category 18 :  18 CL      LUVIC CHERNOZEM     
+category 19 :  19 DD      DYSTRIC PODZOLUVISOL
+category 20 :  20 DE      EUTRIC PODZOLUVISOL 
+category 21 :  21 DG      GLEYIC PODZOLUVISOL 
+category 22 :  22 E       RENDZINA            
+category 23 :  23 FA      ACRIC FERRALSOL     
+category 24 :  24 FH      HUMIC FERRALSOL     
+category 25 :  25 FO      ORTHIC FERRALSOL    
+category 26 :  26 FP      PLINTHIC FERRALSOL  
+category 27 :  27 FR      RHODIC FERRALSOL    
+category 28 :  28 FX      XANTHIC FERRALSOL   
+category 29 :  29 GC      CALCARIC GLEYSOL    
+category 30 :  30 GD      DYSTRIC GLEYSOL     
+category 31 :  31 GE      EUTRIC GLEYSOL      
+category 32 :  32 GH      HUMIC GLEYSOL       
+category 33 :  33 GM      MOLLIC GLEYSOL      
+category 34 :  34 GP      PLINTHIC GLEYSOL    
+category 35 :  35 GX      GELIC GLEYSOL       
+category 36 :  36 HC      CALCARIC PHAEOZEM   
+category 37 :  37 HG      GLEYIC PHAEOZEM     
+category 38 :  38 HH      HAPLIC PHAEOZEM     
+category 39 :  39 HL      LUVIC PHAEOZEM      
+category 40 :  40 I       LITHOSOL            
+category 41 :  41 JC      CALCARIC FLUVISOL   
+category 42 :  42 JD      DYSTRIC FLUVISOL    
+category 43 :  43 JE      EUTRIC FLUVISOL     
+category 44 :  44 JT      THIONIC FLUVISOL    
+category 45 :  45 KH      HAPLIC KASTANOZEM   
+category 46 :  46 KK      CALCIC KASTANOZEM   
+category 47 :  47 KL      LUVIC KASTANOZEM    
+category 48 :  48 LA      ALBIC LUVISOL       
+category 49 :  49 LC      CHROMIC LUVISOL     
+category 50 :  50 LF      FERRIC LUVISOL      
+category 51 :  51 LG      GLEYIC LUVISOL      
+category 52 :  52 LK      CALCIC LUVISOL      
+category 53 :  53 LO      ORTHIC LUVISOL      
+category 54 :  54 LP      PLINTHIC LUVISOL    
+category 55 :  55 LV      VERTIC LUVISOL      
+category 56 :  56 MG      GLEYIC GREYZEM      
+category 57 :  57 MO      ORTHIC GREYZEM      
+category 58 :  58 ND      DYSTRIC NITOSOL     
+category 59 :  59 NE      EUTRIC NITOSOL      
+category 60 :  60 NH      HUMIC NITOSOL       
+category 61 :  61 OD      DYSTRIC HISTOSOL    
+category 62 :  62 OE      EUTRIC HISTOSOL     
+category 63 :  63 OX      GELIC HISTOSOL      
+category 64 :  64 PF      FERRIC PODZOL       
+category 65 :  65 PG      GLEYIC PODZOL       
+category 66 :  66 PH      HUMIC PODZOL        
+category 67 :  67 PL      LEPTIC PODZOL       
+category 68 :  68 PO      ORTHIC PODZOL       
+category 69 :  69 PP      PLACIC PODZOL       
+category 70 :  70 QA      ALBIC ARENOSOL      
+category 71 :  71 QC      CAMBIC ARENOSOL     
+category 72 :  72 QF      FERRALIC ARENOSOL   
+category 73 :  73 QL      LUVIC ARENOSOL      
+category 74 :  74 RC      CALCARIC REGOSOL    
+category 75 :  75 RD      DYSTRIC REGOSOL     
+category 76 :  76 RE      EUTRIC REGOSOL      
+category 77 :  77 RX      GELIC REGOSOL       
+category 78 :  78 SG      GLEYIC SOLONETZ     
+category 79 :  79 SM      MOLLIC SOLONETZ     
+category 80 :  80 SO      ORTHIC SOLONETZ     
+category 81 :  81 TH      HUMIC ANDOSOL       
+category 82 :  82 TM      MOLLIC ANDOSOL      
+category 83 :  83 TO      OCHRIC ANDOSOL      
+category 84 :  84 TV      VITRIC ANDOSOL      
+category 85 :  85 U       RANKER              
+category 86 :  86 VC      CHROMIC VERTISOL    
+category 87 :  87 VP      PELLIC VERTISOL     
+category 88 :  88 WD      DYSTRIC PLANOSOL    
+category 89 :  89 WE      EUTRIC PLANOSOL     
+category 90 :  90 WH      HUMIC PLANOSOL      
+category 91 :  91 WM      MOLLIC PLANOSOL     
+category 92 :  92 WS      SOLODIC PLANOSOL    
+category 93 :  93 WX      GELIC PLANOSOL      
+category 94 :  94 XH      HAPLIC XEROSOL      
+category 95 :  95 XK      CALCIC XEROSOL      
+category 96 :  96 XL      LUVIC XEROSOL       
+category 97 :  97 XY      GYPSIC XEROSOL      
+category 98 :  98 YH      HAPLIC YERMOSOL     
+category 99 :  99 YK      CALCIC YERMOSOL     
+category100 : 100 YL      LUVIC YERMOSOL      
+category101 : 101 YT      TAKYRIC YERMOSOL    
+category102 : 102 YY      GYPSIC YERMOSOL     
+category103 : 103 ZG      GLEYIC SOLONCHAK    
+category104 : 104 ZM      MOLLIC SOLONCHAK    
+category105 : 105 ZO      ORTHIC SOLONCHAK    
+category106 : 106 ZT      TAKYRIC SOLONCHAK   
+category107 : 107 ICE     GLACIER/ICE         

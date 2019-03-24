@@ -1,0 +1,32 @@
+file title  : Webb et al Continent Codes from the FAO/UNESCO Soil Map of the World
+columns     : 360
+rows        : 180
+ref. system : lat/long
+ref. units  : deg
+unit dist.  : 1.0000000
+min. X      : -180.0000000
+max. X      : 180.0000000
+min. Y      : -90.0000000
+max. Y      : 90.0000000
+pos'n error : unknown
+resolution  : 1.0000000
+min. value  : 0
+max. value  : 10
+value units : classes
+value error : unknown
+flag value  : none
+flag def'n  : none
+legend cats : 11
+category  0 : 0 OCEAN
+category  1 : 1 not used
+category  2 : 2  N (NAM)  NAMERICA
+category  3 : 3  C (MCA)  MEXICEAM
+category  4 : 4  S (SAM)  SAMERICA
+category  5 : 5  E (EUR)  EUROPE  
+category  6 : 6  A (AFR)  AFRICA  
+category  7 : 7  I (SCA)  SCASIA  
+category  8 : 8  U (NCA)  NCASIA  
+category  9 : 9  E (SEA)  SEASIA  
+category 10 : 10 T (AUS)  AUSTRALI
+comment     : Continent codes correspond to volume numbers of the FAO/UNESCO
+comment     : Soil Map of the World (1971-81).

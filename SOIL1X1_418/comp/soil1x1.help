@@ -1,0 +1,101 @@
+========================================================================        
+This is file 'SOIL1X1 HELP' which documents the contents of 'SOIL1X1 FAO'       
+========================================================================        
+                                                                                
+DATA FILE NAME:    SOIL1X1 FAO                                                  
+                                                                                
+DESCRIPTION:   GLOBAL DISTRIBUTION OF FAO SOIL UNITS AT 1X1 RESOLUTION          
+               27 SOIL TYPES                                                    
+REFERENCE:                                                                      
+         Zobler, L.,  A world soil file for global climate                      
+               modeling, NASA Technical Memorandum 87802, 32 pp., 1986.         
+                                                                                
+COMMENTS:                                                                       
+       A more extensive version of these data bases, including 106 soil         
+       units as well as soil texture and slope, is available from :             
+          Data Support Section, NCAR, Box 3000, Boulder CO 80307 USA            
+                       telephone (303) 497-1215                                 
+                                                                                
+-----------------------------------------------------------------------         
+             H O W   T O  R E A D                                               
+-----------------------------------------------------------------------         
+      CHARACTER*80 INFO1, INFO2, INFO3                                          
+      INTEGER   IARRAY(360,180)                                                 
+C                                                                               
+      READ(10,910) INFO1                                                        
+      READ(10,910) INFO2                                                        
+      READ(10,910) INFO3                                                        
+      READ(10,920) IARRAY                                                       
+C                                                                               
+  910 FORMAT (A80)                                                              
+  920 FORMAT (10I8)                                                             
+C                                                                               
+      STOP                                                                      
+      END                                                                       
+-----------------------------------------------------------------------         
+             E X P L A N A T I O N   O F   A R R A Y S                          
+-----------------------------------------------------------------------         
+CONTENTS OF INFO1 , INFO2 AND INFO3:                                            
+GLOBAL FAO SOIL TYPES                   DIMENSION = 360 X 180   SCALE = 1       
+OCEAN =   -9999     UNDEF =   99999     MIN =       1 MAX =      27             
+NUMREC = 6483 (NUMBER OF RECORDS IN DATA FILE)                                  
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -             
+                                                                                
+  IARRAY              SOIL TYPES                                                
+  ======              ==========                                                
+  1                   ACRISOL                                                   
+  2                   CAMBISOL                                                  
+  3                   CHERNOZEM                                                 
+  4                   PODZOLUVISOL                                              
+  5                   RENDZINA                                                  
+  6                   FERRALSOL                                                 
+  7                   GLEYSOL                                                   
+  8                   PHAEOZEM                                                  
+  9                   LITHOSOL                                                  
+  10                  FLUVISOL                                                  
+  11                  KASTANOZEM                                                
+  12                  LUVISOL                                                   
+  13                  GREYZEM                                                   
+  14                  NITOSOL                                                   
+  15                  HISTOSOL                                                  
+  16                  PODZOSOL                                                  
+  17                  ARENOSOL                                                  
+  18                  REGOSOL                                                   
+  19                  SOLONETZ                                                  
+  20                  ANDOSOL                                                   
+  22                  RANKER                                                    
+  22                  VERTISOL                                                  
+  23                  PLANOSOL                                                  
+  24                  XEROSOL                                                   
+  25                  YERMOSOL                                                  
+  26                  SOLONCHEK                                                 
+  27                  ICE                                                       
+                                                                                
+-----------------------------------------------------------------------         
+                   G R I D    A R R A N G E M E N T                             
+-----------------------------------------------------------------------         
+IARRAY(I,J)                                                                     
+     I  = 1 IS CENTERED AT 179.5W                                               
+     I INCREASES EASTWARD                                                       
+     J  = 1 IS CENTERED AT 89.5S                                                
+     J INCREASES NORTHWARD                                                      
+                                                                                
+       87S - º - - - º - - - º - - - º - -                                      
+             º (1,3) º (2,3) º (3,3) º                                          
+       88S - º - - - º - - - º - - - º - -                                      
+             º (1,2) º (2,2) º (3,2) º                                          
+       89S - º - - - º - - - º - - - º - -                                      
+             º (1,1) º (2,1) º (3,1) º                                          
+       90S - º - - - º - - - º - - - º                                          
+            180W    179W    178W    177W                                        
+                                                                                
+========================================================================        
+                                                                                
+                                                                                
+Note: please register yourself as a user of this database by sending            
+      a MAIL message to:                                                        
+                         GISS@NASAGISS.GISS.NASA.GOV                            
+      with your name and the GISS database file name you have downloaded.       
+      (We'll pick up your E-mail address from your mail message.)               
+      This will enable us to inform you of any updates or corrections.          
+      Thank you.                                                                
